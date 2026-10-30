@@ -1,0 +1,6 @@
+--- a/sections/introduction.tex
++++ b/sections/introduction.tex
+@@ -1,2 +1,2 @@
+ \section{Introduction}\label{sec:intro}
+-We studies a simple positivity statement over $\RR$.
++We study a simple positivity statement over $\RR$.

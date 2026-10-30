@@ -1,0 +1,40 @@
+--- a/main.tex
++++ b/main.tex
+@@ -21,12 +21,30 @@
+ \end{equation}
+ \end{lemma}
+ \begin{proof}
+-Put $A(t)=\int_{\Om}u(t,x)^2\,dx$, $Z(t)=\sqrt{A(t)}$,
+-$P(t)=\int_{\Om}|\nabla u(t,x)|^2\,dx$, $M_2(t)=A(t)$ and $K_0=\mu$.
+-Integration by parts and \eqref{eq:poincare-input} give
+-$A'(t)=-2P(t)\le-2K_0A(t)$. Thus
+-$\bigl(e^{2K_0t}M_2(t)\bigr)'\le0$, so
+-$M_2(t)\le e^{-2K_0t}M_2(0)$ and $Z(t)\le e^{-K_0t}Z(0)$.
+-This gives \eqref{eq:heat-conclusion}.
++The squared $L^2$ norm measures the size of the solution. Define
++\[
++ A(t)=\int_{\Om}u(t,x)^2\,dx.
++\]
++Smoothness permits differentiation under the integral. Using the equation
++and integrating by parts, we obtain
++\[
++ \begin{aligned}
++ A'(t)
++ &=2\int_{\Om}u(t,x)u_t(t,x)\,dx
++ =2\int_{\Om}u(t,x)\Delta u(t,x)\,dx\\
++ &=-2\int_{\Om}|\nabla u(t,x)|^2\,dx
++ \le -2\mu A(t).
++ \end{aligned}
++\]
++The boundary term vanishes because $u=0$ on $\partial\Om$, and the last
++inequality follows from \eqref{eq:poincare-input} applied to $u(t,\cdot)$.
++Consequently,
++\[
++ \frac{d}{dt}\bigl(e^{2\mu t}A(t)\bigr)
++ =e^{2\mu t}\bigl(A'(t)+2\mu A(t)\bigr)\le0.
++\]
++Integration from $0$ to $t$ gives $A(t)\le e^{-2\mu t}A(0)$.
++Taking nonnegative square roots yields \eqref{eq:heat-conclusion},
++including times at which $A(t)=0$.
+ \end{proof}
+ \end{document}

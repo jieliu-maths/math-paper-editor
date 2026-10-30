@@ -1,0 +1,10 @@
+--- a/main.tex
++++ b/main.tex
+@@ -8,6 +8,6 @@
+ \end{lemma}
+ \begin{proof}
+ Weak sequential compactness gives a strongly convergent subsequence.
+-This prove the assertion.
++This proves the assertion.
+ \end{proof}
+ \end{document}

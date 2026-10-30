@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "state": "complete",
+  "files": {
+    "main.tex": {
+      "before_sha256": "33ced76a480b6f265278ad6cd84d6b7de1da6ccc25ae966796515483c14cbe25",
+      "expected_sha256": "efa7deb7ed44db19c475dd71a6caac73204532bbf960c43db94982f3fd172671",
+      "after_sha256": "efa7deb7ed44db19c475dd71a6caac73204532bbf960c43db94982f3fd172671"
+    }
+  },
+  "operations": [
+    {
+      "file": "main.tex",
+      "before_sha256": "33ced76a480b6f265278ad6cd84d6b7de1da6ccc25ae966796515483c14cbe25",
+      "after_sha256": "efa7deb7ed44db19c475dd71a6caac73204532bbf960c43db94982f3fd172671"
+    }
+  ],
+  "conflicts": [],
+  "redacted_fields": [
+    "root"
+  ],
+  "archive_note": "Reference copy only; runtime root removed. Not a resumable live record."
+}

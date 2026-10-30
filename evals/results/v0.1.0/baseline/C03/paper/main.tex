@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newtheorem{lemma}{Lemma}
+\begin{document}
+
+\begin{lemma}\label{lem:uniform}
+For $0<\varepsilon\le1$, set $f_\varepsilon(x)=x/\varepsilon$ on $[0,1]$.
+There exists a finite $C$ independent of $\varepsilon$ such that
+$|f_\varepsilon(x)-f_\varepsilon(y)|\le C|x-y|$ for all $x,y\in[0,1]$.
+\end{lemma}
+\begin{proof}
+For each fixed $\varepsilon$, the mean value theorem gives this inequality
+with $C_\varepsilon=1/\varepsilon$. Thus the desired $C$ exists.
+\end{proof}
+\end{document}

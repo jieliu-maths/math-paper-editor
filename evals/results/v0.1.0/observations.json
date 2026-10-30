@@ -1,0 +1,366 @@
+{
+  "version": "0.1.0",
+  "date": "2026-10-30",
+  "execution": "Two fresh agent contexts, same inherited parent configuration; ten sequential cases per arm.",
+  "model_id": null,
+  "reasoning_setting": null,
+  "metadata_limit": "Exact backend model ID and reasoning setting were not exposed by the collaboration tool.",
+  "assessor": "Maintaining assistant; no independent expert adjudication.",
+  "skill_hashes": {
+    "LICENSE": "7c1b4f80ce6e872760ec099bbeff24478cf91f9b8d79cd054d256b514d256827",
+    "VERSION": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67",
+    "SKILL.md": "1b42e4cea10792566964523af1646c6d7392edd228dc24d57c4b3e4b21c8d4b8",
+    "references/analysis-pde.md": "e21057ba412dd0fdec4c220818d2cc89f27e62fc1b4f82a53b92ba73761423fc",
+    "references/rewrite.md": "f2e237e983c3162e71c13b11808b0c8c7794d7321e817ad8899a1aa5c1bd9b2d",
+    "references/editing.md": "d48e1665f7233e6a214db8c6367f62c067efa0c79f78ca77e3c0917df1206bdf",
+    "references/review.md": "0638cdeaae44ed5dcdf164442eeba011fa00d3bdfb86f982a38a64357dd5176a",
+    "agents/openai.yaml": "893770d8db00340834975ec36310513144b580ac1669b9b036966cd8851a8f14",
+    "scripts/changes.py": "c77a5257decdfac4faf74dccc2b590a29eacd9dbd0a417d4595e8106ccccbfce"
+  },
+  "records": [
+    {
+      "case": "C01",
+      "arm": "skill",
+      "mode": "deep-review",
+      "input_hashes": {
+        "main.tex": "e969999bec7c6be8696aede0260ed4a6c918df1eb81128baa753e0ff5c73d42f"
+      },
+      "output_hashes": {
+        "main.tex": "e969999bec7c6be8696aede0260ed4a6c918df1eb81128baa753e0ff5c73d42f"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C01/report.md"
+    },
+    {
+      "case": "C02",
+      "arm": "skill",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "f41dc8646069cbe7758a6aa0a4a2a6c861d6ac0858a329f6d8fc159f1eb08c0c"
+      },
+      "output_hashes": {
+        "main.tex": "f41dc8646069cbe7758a6aa0a4a2a6c861d6ac0858a329f6d8fc159f1eb08c0c"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C02/report.md"
+    },
+    {
+      "case": "C03",
+      "arm": "skill",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "1a8e6d43283ce5a2677e118cc58a90b6306ad4a9fea47c07e193e032805f0e74"
+      },
+      "output_hashes": {
+        "main.tex": "1a8e6d43283ce5a2677e118cc58a90b6306ad4a9fea47c07e193e032805f0e74"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C03/report.md"
+    },
+    {
+      "case": "C04",
+      "arm": "skill",
+      "mode": "rewrite",
+      "input_hashes": {
+        "main.tex": "33ced76a480b6f265278ad6cd84d6b7de1da6ccc25ae966796515483c14cbe25"
+      },
+      "output_hashes": {
+        "main.tex": "efa7deb7ed44db19c475dd71a6caac73204532bbf960c43db94982f3fd172671"
+      },
+      "changed_files": [
+        "main.tex"
+      ],
+      "audit_records": [
+        {
+          "state": "complete",
+          "operations": 1
+        }
+      ],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C04/report.md"
+    },
+    {
+      "case": "C05",
+      "arm": "skill",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "da18910bc7dcfbf01adb1bbfe539cf5c7c502c7f6ef95f8909c74764e94448ea"
+      },
+      "output_hashes": {
+        "main.tex": "da18910bc7dcfbf01adb1bbfe539cf5c7c502c7f6ef95f8909c74764e94448ea"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C05/report.md"
+    },
+    {
+      "case": "C06",
+      "arm": "skill",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "d0d052cf1de3a0c310404756442c2c158e4d0d208168d11d4e60570b20a88454"
+      },
+      "output_hashes": {
+        "main.tex": "d0d052cf1de3a0c310404756442c2c158e4d0d208168d11d4e60570b20a88454"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C06/report.md"
+    },
+    {
+      "case": "C07",
+      "arm": "skill",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "47a3c3b86ecd6abb4e70fbef6384b841b1d5c4ddfaeac9c7fb80df78362e33b8",
+        "sections/introduction.tex": "22695501f801810523623e6dd8bfd0c7ee0369e1215e5e718b0822d7b661ed90",
+        "sections/proof.tex": "f91302216dfa795ec28eb02d0a42a61efbfe0d228820122d3715deae6949d7db"
+      },
+      "output_hashes": {
+        "main.tex": "47a3c3b86ecd6abb4e70fbef6384b841b1d5c4ddfaeac9c7fb80df78362e33b8",
+        "sections/introduction.tex": "03fe65d5a99b98cca14d29e98c9265225dd4ac7b6252087ee4a0b5632178dc61",
+        "sections/proof.tex": "f91302216dfa795ec28eb02d0a42a61efbfe0d228820122d3715deae6949d7db"
+      },
+      "changed_files": [
+        "sections/introduction.tex"
+      ],
+      "audit_records": [
+        {
+          "state": "complete",
+          "operations": 1
+        }
+      ],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C07/report.md"
+    },
+    {
+      "case": "C08",
+      "arm": "skill",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "b635d5651d113539dc26c8468663417c4596e86c41efc849744c99d37cd8f0cf"
+      },
+      "output_hashes": {
+        "main.tex": "b635d5651d113539dc26c8468663417c4596e86c41efc849744c99d37cd8f0cf"
+      },
+      "changed_files": [],
+      "audit_records": [
+        {
+          "state": "complete",
+          "operations": 0
+        }
+      ],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C08/report.md"
+    },
+    {
+      "case": "C09",
+      "arm": "skill",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "383f2b3b317cb29fec947d7e6da31e48768703edc95fb0df6ae1ec1e4113e237"
+      },
+      "output_hashes": {
+        "main.tex": "07fd5881f1f67c9b1a5a5c760e9410556b9525c33a36f210afd4992c62cd6498"
+      },
+      "changed_files": [
+        "main.tex"
+      ],
+      "audit_records": [
+        {
+          "state": "complete",
+          "operations": 1
+        }
+      ],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C09/report.md"
+    },
+    {
+      "case": "C10",
+      "arm": "skill",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "709fc1061f23e7db78383371839d5a19a9249475a81673c35e884cf44ff7367b",
+        "references.bib": "81009b3b7732c5826191113a51dd740778ba3faca13d2542758e68302097b1d5"
+      },
+      "output_hashes": {
+        "references.bib": "81009b3b7732c5826191113a51dd740778ba3faca13d2542758e68302097b1d5",
+        "main.tex": "709fc1061f23e7db78383371839d5a19a9249475a81673c35e884cf44ff7367b"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "skill/C10/report.md"
+    },
+    {
+      "case": "C01",
+      "arm": "baseline",
+      "mode": "deep-review",
+      "input_hashes": {
+        "main.tex": "e969999bec7c6be8696aede0260ed4a6c918df1eb81128baa753e0ff5c73d42f"
+      },
+      "output_hashes": {
+        "main.tex": "e969999bec7c6be8696aede0260ed4a6c918df1eb81128baa753e0ff5c73d42f"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C01/report.md"
+    },
+    {
+      "case": "C02",
+      "arm": "baseline",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "f41dc8646069cbe7758a6aa0a4a2a6c861d6ac0858a329f6d8fc159f1eb08c0c"
+      },
+      "output_hashes": {
+        "main.tex": "f41dc8646069cbe7758a6aa0a4a2a6c861d6ac0858a329f6d8fc159f1eb08c0c"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C02/report.md"
+    },
+    {
+      "case": "C03",
+      "arm": "baseline",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "1a8e6d43283ce5a2677e118cc58a90b6306ad4a9fea47c07e193e032805f0e74"
+      },
+      "output_hashes": {
+        "main.tex": "1a8e6d43283ce5a2677e118cc58a90b6306ad4a9fea47c07e193e032805f0e74"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C03/report.md"
+    },
+    {
+      "case": "C04",
+      "arm": "baseline",
+      "mode": "rewrite",
+      "input_hashes": {
+        "main.tex": "33ced76a480b6f265278ad6cd84d6b7de1da6ccc25ae966796515483c14cbe25"
+      },
+      "output_hashes": {
+        "main.tex": "900b5ab959f18e2c2d5e1931b344125f8ac6f9893e2d3a22fa604cc1fd6ca90d"
+      },
+      "changed_files": [
+        "main.tex"
+      ],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C04/report.md"
+    },
+    {
+      "case": "C05",
+      "arm": "baseline",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "da18910bc7dcfbf01adb1bbfe539cf5c7c502c7f6ef95f8909c74764e94448ea"
+      },
+      "output_hashes": {
+        "main.tex": "da18910bc7dcfbf01adb1bbfe539cf5c7c502c7f6ef95f8909c74764e94448ea"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C05/report.md"
+    },
+    {
+      "case": "C06",
+      "arm": "baseline",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "d0d052cf1de3a0c310404756442c2c158e4d0d208168d11d4e60570b20a88454"
+      },
+      "output_hashes": {
+        "main.tex": "d0d052cf1de3a0c310404756442c2c158e4d0d208168d11d4e60570b20a88454"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C06/report.md"
+    },
+    {
+      "case": "C07",
+      "arm": "baseline",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "47a3c3b86ecd6abb4e70fbef6384b841b1d5c4ddfaeac9c7fb80df78362e33b8",
+        "sections/introduction.tex": "22695501f801810523623e6dd8bfd0c7ee0369e1215e5e718b0822d7b661ed90",
+        "sections/proof.tex": "f91302216dfa795ec28eb02d0a42a61efbfe0d228820122d3715deae6949d7db"
+      },
+      "output_hashes": {
+        "main.tex": "47a3c3b86ecd6abb4e70fbef6384b841b1d5c4ddfaeac9c7fb80df78362e33b8",
+        "sections/introduction.tex": "03fe65d5a99b98cca14d29e98c9265225dd4ac7b6252087ee4a0b5632178dc61",
+        "sections/proof.tex": "f91302216dfa795ec28eb02d0a42a61efbfe0d228820122d3715deae6949d7db"
+      },
+      "changed_files": [
+        "sections/introduction.tex"
+      ],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C07/report.md"
+    },
+    {
+      "case": "C08",
+      "arm": "baseline",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "b635d5651d113539dc26c8468663417c4596e86c41efc849744c99d37cd8f0cf"
+      },
+      "output_hashes": {
+        "main.tex": "b635d5651d113539dc26c8468663417c4596e86c41efc849744c99d37cd8f0cf"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C08/report.md"
+    },
+    {
+      "case": "C09",
+      "arm": "baseline",
+      "mode": "edit",
+      "input_hashes": {
+        "main.tex": "383f2b3b317cb29fec947d7e6da31e48768703edc95fb0df6ae1ec1e4113e237"
+      },
+      "output_hashes": {
+        "main.tex": "07fd5881f1f67c9b1a5a5c760e9410556b9525c33a36f210afd4992c62cd6498"
+      },
+      "changed_files": [
+        "main.tex"
+      ],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C09/report.md"
+    },
+    {
+      "case": "C10",
+      "arm": "baseline",
+      "mode": "review",
+      "input_hashes": {
+        "main.tex": "709fc1061f23e7db78383371839d5a19a9249475a81673c35e884cf44ff7367b",
+        "references.bib": "81009b3b7732c5826191113a51dd740778ba3faca13d2542758e68302097b1d5"
+      },
+      "output_hashes": {
+        "references.bib": "81009b3b7732c5826191113a51dd740778ba3faca13d2542758e68302097b1d5",
+        "main.tex": "709fc1061f23e7db78383371839d5a19a9249475a81673c35e884cf44ff7367b"
+      },
+      "changed_files": [],
+      "audit_records": [],
+      "assessment": "pass on the stated case criteria",
+      "report": "baseline/C10/report.md"
+    }
+  ]
+}

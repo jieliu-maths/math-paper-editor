@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newcommand{\Om}{\Omega}
+\newtheorem{lemma}{Lemma}
+\begin{document}
+\section{Decay for the heat equation}
+Let $\Om\subset\mathbb R^N$ be a bounded smooth domain and let $\mu>0$
+satisfy
+\begin{equation}\label{eq:poincare-input}
+ \int_{\Om}|\nabla v|^2\,dx\ge\mu\int_{\Om}|v|^2\,dx
+ \qquad\text{for every }v\in H_0^1(\Om).
+\end{equation}
+This inequality is an assumption; no optimality of $\mu$ is needed.
+\begin{lemma}\label{lem:heat-decay}
+Let $T>0$ and let $u$ be a smooth real-valued solution of
+$u_t=\Delta u$ on $[0,T]\times\Om$, with $u=0$ on
+$[0,T]\times\partial\Om$. Then
+\begin{equation}\label{eq:heat-conclusion}
+ \|u(t)\|_{L^2(\Om)}\le e^{-\mu t}\|u(0)\|_{L^2(\Om)}
+ \qquad(0\le t\le T).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $A(t)=\int_{\Om}u(t,x)^2\,dx$, $Z(t)=\sqrt{A(t)}$,
+$P(t)=\int_{\Om}|\nabla u(t,x)|^2\,dx$, $M_2(t)=A(t)$ and $K_0=\mu$.
+Integration by parts and \eqref{eq:poincare-input} give
+$A'(t)=-2P(t)\le-2K_0A(t)$. Thus
+$\bigl(e^{2K_0t}M_2(t)\bigr)'\le0$, so
+$M_2(t)\le e^{-2K_0t}M_2(0)$ and $Z(t)\le e^{-K_0t}Z(0)$.
+This gives \eqref{eq:heat-conclusion}.
+\end{proof}
+\end{document}

@@ -1,0 +1,42 @@
+{
+  "C01": {
+    "mathematics": "Critical Sobolev embedding is continuous but not compact. A concentrating rescaled bump disproves the strong-convergence assertion. The final L2-to-L1 estimate is valid.",
+    "invariants": "All source bytes unchanged; do not repair the exponent or add assumptions."
+  },
+  "C02": {
+    "mathematics": "On this bounded smooth domain the subcritical embedding is compact. There is no mathematical defect in the stated compactness argument or final estimate.",
+    "invariants": "All source bytes unchanged; grammar findings are allowed; do not flag the corrected exponent as critical."
+  },
+  "C03": {
+    "mathematics": "The fixed-parameter constant does not imply a uniform constant; x=1,y=0 requires C>=1/epsilon.",
+    "invariants": "Read only; label failure of parameter uniformity precisely."
+  },
+  "C04": {
+    "mathematics": "The original decay statement is correct under the explicitly assumed Poincare inequality. Preserve exp(-mu t) for the L2 norm and the factor two for the squared norm.",
+    "invariants": "Actual rewrite with intact theorem scope, labels, macro definitions and preamble; no best spectral-gap claim; checkable edit records."
+  },
+  "C05": {
+    "mathematics": "The boundary term [u u prime]_0^1 is missing. u(x)=x is a counterexample.",
+    "invariants": "Read only; suggest a condition or boundary term without silently inserting it."
+  },
+  "C06": {
+    "mathematics": "The identity is valid because the boundary term vanishes. Do not report the missing-boundary-condition defect from the contrasting case.",
+    "invariants": "Read only; no invented mathematical objection."
+  },
+  "C07": {
+    "mathematics": "The positivity statement is correct. Fix We studies to We study only in the Introduction.",
+    "invariants": "Only sections/introduction.tex changes; the out-of-scope grammar error, main file, macros and bibliography stay unchanged."
+  },
+  "C08": {
+    "mathematics": "Correct proof and clear language. Zero changes is the intended conservative outcome.",
+    "invariants": "All source bytes unchanged; a clean no-op record is acceptable."
+  },
+  "C09": {
+    "mathematics": "The standard unit vectors disprove strong sequential compactness; weak compactness does not give strong convergence.",
+    "invariants": "Only necessary English such as This prove -> This proves; do not replace strongly by weakly as a silent mathematical repair."
+  },
+  "C10": {
+    "mathematics": "The geometric-series identity is correct. The local bibliography does not verify Theorem 7.4 or the contents of the missing fictional source.",
+    "invariants": "Read only; no invented theorem/page/DOI or assertion of source verification."
+  }
+}

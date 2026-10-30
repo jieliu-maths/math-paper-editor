@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newcommand{\HH}{H_0^1(\Omega)}
+\newtheorem{proposition}{Proposition}
+\begin{document}
+\section{Introduction}
+\label{sec:introduction}
+We studies the passage from weak to strong convergence.
+This elementary example isolates the role of compactness.
+
+\section{A claimed compactness argument}
+Let $N\geq 3$, let $\Omega=B_1(0)\subset\mathbb R^N$, and set
+$2^*=2N/(N-2)$.
+\begin{proposition}\label{prop:critical}
+If $u_n\rightharpoonup u$ in $\HH$, then
+$u_n\to u$ strongly in $L^{2^*}(\Omega)$.
+\end{proposition}
+\begin{proof}
+The Sobolev embedding $\HH\hookrightarrow L^{2^*}(\Omega)$ is compact.
+This prove the assertion.
+\end{proof}
+
+\section{A correct estimate}
+Let $v_n,v\in L^2(\Omega)$ and assume $v_n\to v$ in $L^2(\Omega)$.
+By the Cauchy--Schwarz inequality,
+\[
+ \|v_n^2-v^2\|_{L^1(\Omega)}
+ \leq \|v_n-v\|_{L^2(\Omega)}
+       \bigl(\|v_n\|_{L^2(\Omega)}+\|v\|_{L^2(\Omega)}\bigr)\to0.
+\]
+\end{document}

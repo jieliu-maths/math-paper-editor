@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\newcommand{\Om}{\Omega}
+\newtheorem{lemma}{Lemma}
+\begin{document}
+\section{Decay for the heat equation}
+Let $\Om\subset\mathbb R^N$ be a bounded smooth domain and let $\mu>0$
+satisfy
+\begin{equation}\label{eq:poincare-input}
+ \int_{\Om}|\nabla v|^2\,dx\ge\mu\int_{\Om}|v|^2\,dx
+ \qquad\text{for every }v\in H_0^1(\Om).
+\end{equation}
+This inequality is an assumption; no optimality of $\mu$ is needed.
+\begin{lemma}\label{lem:heat-decay}
+Let $T>0$ and let $u$ be a smooth real-valued solution of
+$u_t=\Delta u$ on $[0,T]\times\Om$, with $u=0$ on
+$[0,T]\times\partial\Om$. Then
+\begin{equation}\label{eq:heat-conclusion}
+ \|u(t)\|_{L^2(\Om)}\le e^{-\mu t}\|u(0)\|_{L^2(\Om)}
+ \qquad(0\le t\le T).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Define the squared $L^2$ energy by
+\[
+ E(t)=\int_{\Om}u(t,x)^2\,dx=\|u(t)\|_{L^2(\Om)}^2,
+ \qquad 0\le t\le T.
+\]
+Smoothness allows us to differentiate under the integral sign. Using the
+heat equation and integrating by parts, we obtain
+\[
+ E'(t)=2\int_{\Om}u u_t\,dx
+      =2\int_{\Om}u\Delta u\,dx
+      =-2\int_{\Om}|\nabla u|^2\,dx.
+\]
+The boundary term vanishes because $u=0$ on $\partial\Om$.
+For each time $t$, the function $u(t,\cdot)$ belongs to $H_0^1(\Om)$, so
+\eqref{eq:poincare-input} yields
+\[
+ E'(t)\le -2\mu E(t).
+\]
+Multiplying by the integrating factor $e^{2\mu t}$ gives
+\[
+ \frac{d}{dt}\bigl(e^{2\mu t}E(t)\bigr)
+ =e^{2\mu t}\bigl(E'(t)+2\mu E(t)\bigr)\le0.
+\]
+Integrating from $0$ to $t$ therefore gives
+$E(t)\le e^{-2\mu t}E(0)$. Taking square roots proves
+\eqref{eq:heat-conclusion}. This last step also covers the case $E(0)=0$;
+no division by the energy is needed.
+\end{proof}
+\end{document}

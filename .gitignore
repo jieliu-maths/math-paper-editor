@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.math-paper-editor/
+.math-paper-editor-install.json
+evals/runs/
+dist/
+*.aux
+*.log
+*.out
+*.pdf

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Paper Editor"
+  short_description: "Review, edit, and rewrite mathematical papers with audit trails"
+  default_prompt: "Use $math-paper-editor review to check the selected paper's mathematics and exposition."

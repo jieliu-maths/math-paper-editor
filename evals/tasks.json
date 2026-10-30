@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C01",
+    "fixture": "critical-compactness",
+    "mode": "deep-review",
+    "task": "Deep-review main.tex. Check the key mathematical inference and give concrete evidence for any consequential issue. Keep every paper source unchanged."
+  },
+  {
+    "id": "C02",
+    "fixture": "subcritical-compactness",
+    "mode": "review",
+    "task": "Review main.tex for mathematical correctness within its stated scope. Keep all paper sources unchanged."
+  },
+  {
+    "id": "C03",
+    "fixture": "parameter-uniformity",
+    "mode": "review",
+    "task": "Review main.tex. Check whether the conclusion has the parameter dependence claimed. Keep the paper unchanged."
+  },
+  {
+    "id": "C04",
+    "fixture": "heat-rewrite",
+    "mode": "rewrite",
+    "task": "Rewrite main.tex for a graduate reader. Simplify redundant auxiliary notation and make the energy argument explicit. Preserve the theorem hypotheses, decay rate, labels, macros, and existing preamble. Deliver the actual revised source."
+  },
+  {
+    "id": "C05",
+    "fixture": "boundary-missing",
+    "mode": "review",
+    "task": "Review the integration by parts argument in main.tex. Keep all sources unchanged."
+  },
+  {
+    "id": "C06",
+    "fixture": "boundary-correct",
+    "mode": "review",
+    "task": "Review the integration by parts argument in main.tex. Keep all sources unchanged."
+  },
+  {
+    "id": "C07",
+    "fixture": "section-scope",
+    "mode": "edit",
+    "task": "Edit only the Introduction for necessary language corrections. Read other files if useful, but preserve all mathematics, labels, macros and bibliography. Do not edit other sections."
+  },
+  {
+    "id": "C08",
+    "fixture": "zero-change",
+    "mode": "edit",
+    "task": "Conservatively edit main.tex only where necessary for mathematical English. Preserve all mathematical content and existing clear sentences."
+  },
+  {
+    "id": "C09",
+    "fixture": "one-word-mathematics",
+    "mode": "edit",
+    "task": "Conservatively edit main.tex for necessary English corrections. Report mathematical concerns separately and leave the mathematical statements and argument unchanged."
+  },
+  {
+    "id": "C10",
+    "fixture": "unverified-citation",
+    "mode": "review",
+    "task": "Review main.tex and check the cited support using only the supplied local files. Do not use the network. Distinguish the truth of the elementary identity from verification of the citation. Keep all paper sources unchanged."
+  }
+]
